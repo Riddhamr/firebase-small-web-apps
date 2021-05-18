@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="progress-container">
+                <progress max="100"></progress>
+            </div>
+
+            <div id="images"></div>
+
+            <div class="buttons-grid">
+                <div>
+                    <input type="file" id="upload-button" />
+                </div>
+                <div>
+                    <button id="clear" class="blue-button">
+                        Remove all photos
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>
